@@ -8,7 +8,7 @@ namespace PokerHandSort
 {
     class Program
     {
-        public const string TIE = "Nobody Wins. THis is a Tie!.";
+        public const string TIE = "Nobody Wins. This is a Tie!.";
         static void Main(string[] args)
         {
             int winsPlayer1 = 0;
