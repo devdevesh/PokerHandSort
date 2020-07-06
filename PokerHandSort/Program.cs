@@ -13,16 +13,15 @@ namespace PokerHandSort
         {
             int winsPlayer1 = 0;
             int winsPlayer2 = 0;
-            Console.WriteLine("Please copy the file of your choosing to the root directory and input the text file(eg poker-hands.txt)");
-            string Filename1 = Console.ReadLine();
-            //string textFile = @".\PokerHandSort\"+Filename1;
-            string textFile = @".\" + Filename1;
+            Console.WriteLine(@"Please enter file name with full path (eg: C:\Users\PokerHandSort\poker-hands.txt)");
+            string Filename = Console.ReadLine();
+            string textFile = Filename;
             if (File.Exists(textFile))
             {
                 Console.WriteLine("Has Document");
             try
             {   // Open the text file using a stream reader.
-                using (StreamReader br = new StreamReader(Filename1))
+                using (StreamReader br = new StreamReader(Filename))
                 {
                     while (true)
                     {
